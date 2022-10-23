@@ -130,8 +130,7 @@ struct ProductCellView: View {
         }
     }
     
-    // https://stackoverflow.com/a/63594211/689964
-    
+    // https://stackoverflow.com/a/63594211/689964    
     func makeTransparent(image: UIImage) -> UIImage? {
         guard let rawImage = image.cgImage else { return nil}
         let colorMasking: [CGFloat] = [200, 255, 200, 255, 255, 255]
